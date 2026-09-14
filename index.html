@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A simple webpage template — Travis Lee</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent2: #a7f3d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+      font-size: 20px;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    h1 {
+      font-size: 2rem;
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin: 1.75rem 0 0.6rem;
+    }
+    p, li { color: var(--muted); font-size: 1.1rem; }
+    .tag {
+      display: inline-block;
+      background: #334155;
+      color: var(--accent2);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.1rem 1.15rem;
+      margin: 1rem 0;
+    }
+    ul { padding-left: 1.2rem; margin: 0.5rem 0 0; }
+    li { margin: 0.45rem 0; }
+    .price {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0.25rem 0;
+    }
+    .note {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      margin-top: 0.75rem;
+    }
+    .cta {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: 1.25rem;
+      padding: 1rem 1.25rem;
+      border: none;
+      border-radius: 0.9rem;
+      background: var(--accent);
+      color: #0f172a;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cta:active { opacity: 0.9; }
+    #msg {
+      margin-top: 0.85rem;
+      min-height: 1.5rem;
+      font-weight: 600;
+      color: var(--accent2);
+      text-align: center;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">Sample shop · about $99</div>
+    <h1>A simple webpage template for your small business</h1>
+    <p>You get a phone-friendly one-page site you can put your name on. No tech talk.</p>
+
+    <div class="card">
+      <h2>What you get</h2>
+      <ul>
+        <li>A one-page template that looks good on a phone</li>
+        <li>Clear spots for your shop name, what you do, and how to reach you</li>
+        <li>A file you can open and use for your own page</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Who it’s for</h2>
+      <p>Local owners who want a simple page of their own. Hair salons, cafes, contractors, clinics, retail — anyone who needs a clean page, not a big website.</p>
+    </div>
+
+    <div class="card">
+      <h2>Sample offer</h2>
+      <p class="price">$99</p>
+      <p>One template. Your page. Plain words.</p>
+      <p>I can help you set it up later if you want. That’s extra. This page is for the template.</p>
+      <p class="note">This page is a sample only. No real checkout. No cards charged. Email is a placeholder.</p>
+      <a class="cta" id="cta" href="mailto:you@your-email-here.com">Email you@your-email-here.com</a>
+      <div id="msg" aria-live="polite">Placeholder only — swap in your real email later.</div>
+    </div>
+
+    <footer>Travis Lee · sample shop · not a live store</footer>
+  </main>
+</body>
+</html>
