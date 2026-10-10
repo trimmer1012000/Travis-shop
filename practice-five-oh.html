@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Five-Oh Garage — practice page</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent2: #a7f3d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+      font-size: 20px;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    h1 {
+      font-size: 2rem;
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin: 1.75rem 0 0.6rem;
+    }
+    p, li { color: var(--muted); font-size: 1.1rem; }
+    .tag {
+      display: inline-block;
+      background: #334155;
+      color: var(--accent2);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .name {
+      color: var(--text);
+      font-weight: 700;
+      margin: 0 0 0.35rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.1rem 1.15rem;
+      margin: 1rem 0;
+    }
+    .card h2 { margin: 0 0 0.35rem; }
+    .price {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0.25rem 0;
+    }
+    ul { padding-left: 1.2rem; margin: 0.5rem 0 0; }
+    li { margin: 0.45rem 0; }
+    .booked {
+      display: inline-block;
+      background: #334155;
+      color: var(--accent2);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      margin: 0 0 0.4rem;
+    }
+    .spots {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    @media (min-width: 40rem) {
+      .spots { grid-template-columns: 1fr 1fr; }
+    }
+    .spot {
+      margin: 0;
+    }
+    .spot img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 1rem;
+    }
+    .spot figcaption {
+      margin-top: 0.45rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .spot strong {
+      color: var(--text);
+    }
+    .reach {
+      color: var(--text);
+      font-weight: 700;
+      margin: 0.75rem 0;
+      overflow-wrap: anywhere;
+    }
+    .reach a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+    .demo-domain {
+      font-size: 0.95rem;
+      color: #94a3b8;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">This is practice. Not a new live site.</div>
+    <p class="name">Five-Oh Garage</p>
+    <h1>A clean car without leaving your driveway.</h1>
+    <p>Five-Oh Garage comes to you with everything needed to detail your car, truck or SUV. Two simple packages, starting at $150.</p>
+    <p>Same price for every car. Bigger vehicles add a flat amount, shown below.</p>
+
+    <h2>Pick your package</h2>
+
+    <div class="card">
+      <h2>Interior Refresh</h2>
+      <p class="price">$150</p>
+      <p>A full inside clean for the car you live in every day.</p>
+      <ul>
+        <li>Door jambs</li>
+        <li>Vacuum carpets &amp; seats</li>
+        <li>Streak-free glass</li>
+        <li>Leather conditioned</li>
+        <li>UV protectant on interior plastics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Total Reset</h2>
+      <p class="price">$200</p>
+      <p>Everything in the Interior Refresh, plus the outside and a deep clean of the seats and carpets.</p>
+      <ul>
+        <li>Everything in Interior Refresh</li>
+        <li>2-step hand wash</li>
+        <li>Exterior plastic UV protectant</li>
+        <li>Wheels &amp; tires cleaned</li>
+        <li>Tire shine</li>
+        <li>Shampoo + extraction of seats &amp; carpets</li>
+      </ul>
+    </div>
+
+    <p>Mid-size SUV +$25, Truck or full-size SUV +$50</p>
+    <p class="reach"><a href="https://y7zyc9hp9v-cpu.github.io/trailheadai-site/demos/five-oh-garage-v1/">See the full Five-Oh practice site</a></p>
+
+    <h2>Before and after</h2>
+    <div class="spots">
+      <figure class="spot">
+        <img src="images/five-oh-before.jpg" alt="Dirty car cabin before a detail" width="1280" height="720">
+        <figcaption>Illustration: two sample cars, not a real before/after</figcaption>
+      </figure>
+      <figure class="spot">
+        <img src="images/five-oh-after.jpg" alt="Clean car cabin after a detail" width="1280" height="720">
+        <figcaption>Illustration: two sample cars, not a real before/after</figcaption>
+      </figure>
+    </div>
+
+    <h2>Contact</h2>
+    <p class="reach"><a href="tel:+19206772508">Call&nbsp;(920)&nbsp;677&#8209;2508</a></p>
+    <p class="reach"><a href="sms:+19206772508">Text (920)&nbsp;677&#8209;2508</a></p>
+    <p class="reach"><a href="mailto:realfiveohgarage@gmail.com">realfiveohgarage@gmail.com</a></p>
+
+    <footer>This is practice. Not a new live site.</footer>
+  </main>
+</body>
+</html>
