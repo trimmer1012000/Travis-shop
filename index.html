@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>A simple webpage template — Travis Lee</title>
   <style>
     :root {
@@ -37,6 +37,17 @@
       margin: 1.75rem 0 0.6rem;
     }
     p, li { color: var(--muted); font-size: 1.1rem; }
+    p.owner {
+      color: var(--text);
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      overflow-wrap: anywhere;
+    }
+    p.owner a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
     .tag {
       display: inline-block;
       background: #334155;
@@ -52,6 +63,22 @@
       border-radius: 1rem;
       padding: 1.1rem 1.15rem;
       margin: 1rem 0;
+    }
+    .card h2 { margin: 0.15rem 0 0.35rem; }
+    .label {
+      display: inline-block;
+      background: #334155;
+      color: var(--accent2);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      margin: 0 0 0.35rem;
+    }
+    h3 {
+      font-size: 1rem;
+      margin: 1rem 0 0.25rem;
+      color: var(--text);
     }
     ul { padding-left: 1.2rem; margin: 0.5rem 0 0; }
     li { margin: 0.45rem 0; }
@@ -80,6 +107,7 @@
       font-weight: 700;
       cursor: pointer;
       text-decoration: none;
+      overflow-wrap: anywhere;
     }
     .cta:active { opacity: 0.9; }
     #msg {
@@ -99,33 +127,67 @@
 </head>
 <body>
   <main>
-    <div class="tag">Sample shop · about $99</div>
-    <h1>A simple webpage template for your small business</h1>
-    <p>You get a phone-friendly one-page site you can put your name on. No tech talk.</p>
+    <div class="tag">Sample shop · pages from $85</div>
+    <h1>A clean page your customers can actually use.</h1>
+    <p class="owner">Travis Lee<br><a href="mailto:trailheadaiwisco@gmail.com">trailheadaiwisco@gmail.com</a></p>
+    <p>Trailhead AI builds simple, phone-first web pages for shops, salons, and local services, without a big agency bill or a maze of apps.</p>
+
+    <h2>Pick where you start</h2>
+    <p>Three simple ways in. Start small, grow later.</p>
 
     <div class="card">
-      <h2>What you get</h2>
+      <p class="label">Starter</p>
+      <h2>Page</h2>
+      <p class="price">$85</p>
+      <h3>Included</h3>
       <ul>
-        <li>A one-page template that looks good on a phone</li>
-        <li>Clear spots for your shop name, what you do, and how to reach you</li>
-        <li>A file you can open and use for your own page</li>
+        <li>One phone-friendly page</li>
+        <li>Your name + tagline</li>
+        <li>Up to 3 cards of content</li>
+        <li>Live URL when done</li>
+      </ul>
+      <h3>Not included</h3>
+      <ul>
+        <li>Bots, custom domain, extra pages</li>
+        <li>Unlimited revisions or deep setup</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Who it’s for</h2>
-      <p>Local owners who want a simple page of their own. Hair salons, cafes, contractors, clinics, retail — anyone who needs a clean page, not a big website.</p>
+      <p class="label">Usual</p>
+      <h2>Setup Pack</h2>
+      <p class="price">$300</p>
+      <h3>Included</h3>
+      <ul>
+        <li>The page above</li>
+        <li>Contact form → your email</li>
+        <li>Domain wire (you buy the domain)</li>
+        <li>Notes pass for your 3 cards</li>
+        <li>2 revision rounds in 14 days</li>
+        <li>Free GitHub Pages hosting</li>
+      </ul>
     </div>
 
     <div class="card">
-      <h2>Sample offer</h2>
-      <p class="price">$99</p>
-      <p>One template. Your page. Plain words.</p>
-      <p>I can help you set it up later if you want. That’s extra. This page is for the template.</p>
-      <p class="note">This page is a sample only. No real checkout. No cards charged. Email is a placeholder.</p>
-      <a class="cta" id="cta" href="mailto:you@your-email-here.com">Email you@your-email-here.com</a>
-      <div id="msg" aria-live="polite">Placeholder only — swap in your real email later.</div>
+      <p class="label">Scoped</p>
+      <h2>Local Site</h2>
+      <p class="price">$1,100</p>
+      <h3>Included</h3>
+      <ul>
+        <li>1–3 pages</li>
+        <li>Brand pass</li>
+        <li>Form + basic analytics</li>
+        <li>Domain + host wire</li>
+        <li>30-minute kickoff</li>
+        <li>Written scope</li>
+        <li>3 revision rounds in 21 days</li>
+        <li>Optional GBP / map / review prompts (text only)</li>
+      </ul>
     </div>
+
+    <p class="note">This page is a sample only. No real checkout. No cards charged.</p>
+    <a class="cta" id="cta" href="mailto:trailheadaiwisco@gmail.com?subject=I%20want%20to%20ask%20about%20a%20page&body=Hi%2C%20I%20want%20to%20ask%20about%20a%20Trailhead%20AI%20page.">Email trailheadaiwisco@gmail.com</a>
+    <div id="msg" aria-live="polite">Tap the button. It opens an email to trailheadaiwisco@gmail.com. Send it to ask. Nothing is charged.</div>
 
     <footer>Travis Lee · sample shop · not a live store</footer>
   </main>
